@@ -1,0 +1,1 @@
+print("Vaccination slot booking")
