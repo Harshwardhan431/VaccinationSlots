@@ -37,11 +37,11 @@ print(get_for_seven_days(datetime.today()))
 content = "\n".join([create_output(session_info) for session_info in get_for_seven_days(datetime.today())])
 sender = "vaccineavailability123@gmail.com"
 sender_password = "MHTBC@12345"
-username = input("Enter your mail address : ")
 
 if not content:
     print("No availability")
 else:
+    username = input("Enter your mail address : ")
     email_msg = email.message.EmailMessage()
     email_msg["Subject"] = "Vaccination Slot Open"
     email_msg["From"] = username
